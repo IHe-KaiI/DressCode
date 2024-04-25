@@ -6,7 +6,7 @@ This repo is the official implementation for _DressCode: Autoregressively Sewing
 
 **SIGGRAPH 2024 (ACM Transactions on Graphics)**
 
-[[Project Page]]([https://miaoing.github.io/RNHA/](https://ihe-kaii.github.io/DressCode/)) [[Paper Link]]([https://arxiv.org/abs/2401.16465.pdf)
+[[Project Page]](https://ihe-kaii.github.io/DressCode/) [[Paper Link]](https://arxiv.org/abs/2401.16465.pdf)
 
 ![dataset_description](./imgs/teaser.png)
 
@@ -18,12 +18,13 @@ Apparel's significant role in human appearance underscores the importance of gar
 If you use this dataset for your research, please cite our paper:
 
 ```
-@inproceedings{zhou2023relightable,
-  title={Relightable Neural Human Assets from Multi-view Gradient Illuminations},
-  author={Zhou, Taotao and He, Kai and Wu, Di and Xu, Teng and Zhang, Qixuan and Shao, Kuixiang and Chen, Wenzheng and Xu, Lan and Yu, Jingyi},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={4315--4327},
-  year={2023}
+@misc{he2024dresscode,
+      title={DressCode: Autoregressively Sewing and Generating Garments from Text Guidance}, 
+      author={Kai He and Kaixin Yao and Qixuan Zhang and Jingyi Yu and Lingjie Liu and Lan Xu},
+      year={2024},
+      eprint={2401.16465},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
