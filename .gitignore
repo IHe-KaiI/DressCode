@@ -49,7 +49,6 @@ models--stabilityai--stable-diffusion-2-1-base/
 *.ply
 *.obj
 *.bin
-*.png
 tensorboard/
 
 # PyInstaller
