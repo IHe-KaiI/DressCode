@@ -2,7 +2,7 @@
 
 This repo is the official implementation for _DressCode: Autoregressively Sewing and Generating Garments from Text Guidance_.
 
-**[Kai He](http://academic.hekai.site/), [Kaixin Yao](https://yaokxx.github.io/), [Qixuan Zhang](https://scholar.google.com/citations?user=YvwsqvYAAAAJ), [Lingjie Liu](https://lingjie0206.github.io/), [Jingyi Yu](http://www.yu-jingyi.com/), [Lan Xu](http://xu-lan.com/).** 
+**[Kai He](http://academic.hekai.site/), [Kaixin Yao](https://yaokxx.github.io/), [Qixuan Zhang](https://scholar.google.com/citations?user=YvwsqvYAAAAJ), [Jingyi Yu](http://www.yu-jingyi.com/), [Lingjie Liu](https://lingjie0206.github.io/), [Lan Xu](http://xu-lan.com/).** 
 
 **SIGGRAPH 2024 (ACM Transactions on Graphics)**
 
