@@ -35,8 +35,6 @@ outputs/
 slurm/
 wandb/
 artifacts/
-Garment-Pattern-Generator/
-models--stabilityai--stable-diffusion-2-1-base/
 models--stabilityai--stable-diffusion-2-1-base/
 
 # slurm out
@@ -45,10 +43,11 @@ models--stabilityai--stable-diffusion-2-1-base/
 # Training out
 *.npy
 *.pth
+*.safetensors
 *.wandb
 *.ply
-*.obj
 *.bin
+*.png
 tensorboard/
 
 # PyInstaller

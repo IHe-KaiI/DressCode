@@ -1,0 +1,66 @@
+{
+    "dress_sleeveless": {
+        "waist_wideness": [0.9, 1.2],
+        "skirt_length": [0.9, 1.9]
+    },
+    "jacket": {
+        "sllength": [5, 37],
+        "wideness": [0.9, 1.3]
+    },
+    "jacket_hood": {
+        "sllength": [5, 37],
+        "wideness": [0.9, 1.3]
+    },
+    "jumpsuit_sleeveless": {
+        "top_wideness": [0.9, 1.2]  
+    },
+    "pants_straight_sides": {},
+    "skirt_2_panels": {
+        "wideness": [0.65, 1.3]
+    },
+    "skirt_4_panels": {
+        "fb_wideness": [0.6, 1.9],
+        "side_wideness": [0.6, 1.9]
+    },
+    "skirt_8_panels": {
+        "wideness": [0.9, 2.2]
+    },
+    "tee": {
+        "sllength": [5, 37],
+        "length": [0.3, 1.3]
+    },
+    "tee_sleeveless": {
+        "length": [0.3, 1.3]
+    },
+    "wb_dress_sleeveless": {
+        "skirt_wideness": [1.1, 1.8],
+        "top_wideness": [1, 1.3]
+    },
+    "wb_pants_straight": {},
+
+    "dress": {
+        "waist_wideness": [0.9, 1.2],
+        "skirt_length": [0.9, 1.9],
+        "sllength": [5, 37]
+    },
+    "jacket_hood_sleeveless": {
+        "wideness": [0.9, 1.3]
+    },
+    "jacket_sleeveless": {
+        "wideness": [0.9, 1.3]
+    },
+    "jumpsuit": {
+        "sllength": [5, 37],
+        "top_wideness": [0.9, 1.2]  
+    },
+    "skirt_waistband": {
+        "wideness": [1, 1.8]
+    },
+    "tee_hood": {
+        "sllength": [5, 37],
+        "length": [0.3, 1.3]
+    },
+    "wb_jumpsuit_sleeveless": {
+        "top_wideness": [1, 1.3]
+    }
+}

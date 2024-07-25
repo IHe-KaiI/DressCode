@@ -1,0 +1,85 @@
+{
+  "body": "f_smpl_template.obj", 
+  "data_folder": "tee_2300", 
+  "frozen": true, 
+  "generator": {
+    "config": {
+      "random_seed": 1621516851
+    }, 
+    "stats": {
+      "generation_time": "100.087 s"
+    }
+  }, 
+  "name": "tee_2300", 
+  "render": {
+    "config": {
+      "garment_color": [
+        0.6359999775886536, 
+        0.1120000034570694, 
+        0.04800000041723251
+      ], 
+      "resolution": [
+        800, 
+        800
+      ]
+    },
+    "stats": {}
+  }, 
+  "scan_imitation": {
+    "config": {
+      "test_rays_num": 30, 
+      "visible_rays_num": 4
+    }
+  }, 
+  "sim": {
+    "config": {
+      "body_friction": 0.25, 
+      "collision_thickness": 0.04, 
+      "material": {
+        "air_drag": 0.01, 
+        "bend_angle_dropoff": 0.11, 
+        "bend_damp": 0.1, 
+        "bend_damp_dropoff": 0.0, 
+        "bend_plasticity": 0.0, 
+        "bend_resistance": 0.03, 
+        "bend_yield": 0.0, 
+        "compression_resistance": 100.0, 
+        "density": 0.015, 
+        "friction": 0.01, 
+        "length_scale": 1.0, 
+        "pressure": 0.0, 
+        "rubber": 1.0, 
+        "shear_resistance": 0.4, 
+        "stretch_damp": 0.2, 
+        "stretch_resistance": 400.0, 
+        "viscous_damp": 0.0, 
+        "warp_resistance_scale": 1.0, 
+        "warp_rubber_scale": 1.0, 
+        "weft_resistance_scale": 1.0, 
+        "weft_rubber_scale": 1.0
+      }, 
+      "max_sim_steps": 1500, 
+      "non_static_percent": 1.5, 
+      "object_intersect_border_threshold": 100, 
+      "resolution_scale": 5, 
+      "self_intersect_hit_threshold": 0, 
+      "static_threshold": 0.01, 
+      "zero_gravity_steps": 5
+    },
+    "stats": {}
+  }, 
+  "size": 2300, 
+  "system_info": {
+    "GPU": [
+      "NVIDIA GeForce RTX 2080 Ti"
+    ], 
+    "architecture": "AMD64", 
+    "platform": "Windows", 
+    "platform-release": "10", 
+    "platform-version": "10.0.19041", 
+    "processor": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD", 
+    "ram": "64 GB"
+  }, 
+  "templates": "basic tee/tee.json", 
+  "to_subfolders": true
+}

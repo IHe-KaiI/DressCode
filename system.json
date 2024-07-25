@@ -1,0 +1,14 @@
+{
+  "output": "D:\\hekai\\DressCode\\outputs",
+  "datasets_path": "",
+  "caption_path": "",
+  "wandb_username": "",
+  "human_obj_path": "./body_model/f_smpl_template.obj",
+  "sim_json_path": "./system_sim.json",
+  "HDR_path": "D:\\hekai\\DressCode\\imgs\\autumn_field_1k.hdr",
+  "blender_path": "",
+  "maya_path": "",
+  "dataset_properties_path": "./dataset_properties.json",
+  "OpenAI_API_Key": "", 
+  "https_proxy": ""
+}

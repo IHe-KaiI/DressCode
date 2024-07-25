@@ -1,0 +1,163 @@
+{
+    "top_front": [
+        ["tee", "front"],
+        ["tee_sleeveless", "front"],
+        ["tee_hood", "front"],
+        ["dress", "top_front"],
+        ["dress_sleeveless", "top_front"],
+        ["jumpsuit", "up_front"],
+        ["jumpsuit_sleeveless", "up_front"],
+        ["wb_dress_sleeveless", "top_front"],
+        ["wb_jumpsuit_sleeveless", "top_front"],
+        ["jacket_sleeveless", "front_right"],
+        ["jacket_hood_sleeveless", "front_right"],
+        ["jacket_hood", "front_right"],
+        ["jacket", "front_right"]
+    ], 
+    "top_front_left": [
+        ["jacket_sleeveless", "front_left"],
+        ["jacket_hood_sleeveless", "front_left"],
+        ["jacket_hood", "front_left"],
+        ["jacket", "front_left"]
+    ],
+    "top_back": [
+        ["tee", "back"],
+        ["tee_sleeveless", "back"],
+        ["tee_hood", "back"],
+        ["jacket_sleeveless", "back"],
+        ["jacket_hood_sleeveless", "back"],
+        ["jacket_hood", "back"],
+        ["jacket", "back"],
+        ["dress", "top_back"],
+        ["dress_sleeveless", "top_back"],
+        ["jumpsuit", "up_back"],
+        ["jumpsuit_sleeveless", "up_back"], 
+        ["wb_dress_sleeveless", "top_back"],
+        ["wb_jumpsuit_sleeveless", "top_back"]
+    ], 
+
+    "sleeve_lf": [
+        ["tee", "lfsleeve"],
+        ["tee_hood", "lfsleeve"],
+        ["jacket_hood", "lfsleeve"],
+        ["jacket", "lfsleeve"],
+        ["dress", "lfsleeve"],
+        ["jumpsuit", "lfsleeve"]
+    ], 
+    "sleeve_lb": [
+        ["tee", "lbsleeve"],
+        ["tee_hood", "lbsleeve"],
+        ["jacket_hood", "lbsleeve"],
+        ["jacket", "lbsleeve"],
+        ["dress", "lbsleeve"],
+        ["jumpsuit", "lbsleeve"]
+    ], 
+    "sleeve_rf": [
+        ["tee", "rfsleeve"],
+        ["tee_hood", "rfsleeve"],
+        ["jacket_hood", "rfsleeve"],
+        ["dress", "rfsleeve"],
+        ["jacket", "rfsleeve"],
+        ["jumpsuit", "rfsleeve"]
+    ],
+    "sleeve_rb": [
+        ["tee", "rbsleeve"],
+        ["tee_hood", "rbsleeve"],
+        ["jacket_hood", "rbsleeve"],
+        ["jacket", "rbsleeve"],
+        ["dress", "rbsleeve"],
+        ["jumpsuit", "rbsleeve"]
+    ],
+
+    "hood_left": [
+        ["tee_hood", "Lhood"],
+        ["jacket_hood_sleeveless", "Lhood"],
+        ["jacket_hood", "Lhood"]
+    ],
+    "hood_right": [
+        ["tee_hood", "Rhood"],
+        ["jacket_hood_sleeveless", "Rhood"],
+        ["jacket_hood", "Rhood"]
+    ],
+
+    "skirt_front": [
+        ["dress", "skirt_front"],
+        ["dress_sleeveless", "skirt_front"],
+        ["wb_dress_sleeveless", "skirt_front"],
+        ["skirt_2_panels", "front"],
+        ["skirt_4_panels", "front"],
+        ["skirt_8_panels", "front"],
+        ["skirt_waistband", "front"]
+    ],
+    "skirt_back": [
+        ["dress", "skirt_back"],
+        ["dress_sleeveless", "skirt_back"],
+        ["wb_dress_sleeveless", "skirt_back"],
+        ["skirt_2_panels", "back"],
+        ["skirt_4_panels", "back"],
+        ["skirt_8_panels", "back"],
+        ["skirt_waistband", "back"]
+    ], 
+    "skirt_left": [
+        ["skirt_4_panels", "left"],
+        ["skirt_8_panels", "left_1"]
+    ], 
+    "skirt_right": [
+        ["skirt_4_panels", "right"],
+        ["skirt_8_panels", "right_1"]
+    ],
+    "skirt_front_left": [
+        ["skirt_8_panels", "left_2"]
+    ],
+    "skirt_front_right": [
+        ["skirt_8_panels", "right_2"]
+    ],
+    "skirt_back_left": [
+        ["skirt_8_panels", "left_0"]
+    ],
+    "skirt_back_right": [
+        ["skirt_8_panels", "right_0"]
+    ],
+
+    "wb_front": [
+        ["wb_dress_sleeveless", "wb_front"],
+        ["wb_jumpsuit_sleeveless", "wb_front"],
+        ["wb_pants_straight", "wb_front"],
+        ["skirt_waistband", "wb_front"]
+    ],
+    "wb_back": [
+        ["wb_dress_sleeveless", "wb_back"],
+        ["wb_jumpsuit_sleeveless", "wb_back"],
+        ["wb_pants_straight", "wb_back"],
+        ["skirt_waistband", "wb_back"]
+    ],
+
+    "pant_front_left": [
+        ["jumpsuit", "Lfront"],
+        ["jumpsuit_sleeveless", "Lfront"],
+        ["wb_jumpsuit_sleeveless", "Lfront"],
+        ["pants_straight_sides", "Lfront"],
+        ["wb_pants_straight", "Lfront"]
+    ],
+    "pant_front_right": [
+        ["jumpsuit", "Lback"],
+        ["jumpsuit_sleeveless", "Lback"],
+        ["wb_jumpsuit_sleeveless", "Lback"],
+        ["pants_straight_sides", "Lback"],
+        ["wb_pants_straight", "Lback"]
+    ],
+    "pant_back_left": [
+        ["jumpsuit", "Rfront"],
+        ["jumpsuit_sleeveless", "Rfront"],
+        ["wb_jumpsuit_sleeveless", "Rfront"],
+        ["pants_straight_sides", "Rfront"],
+        ["wb_pants_straight", "Rfront"]
+    ],
+    "pant_back_right": [
+        ["jumpsuit", "Rback"],
+        ["jumpsuit_sleeveless", "Rback"],
+        ["wb_jumpsuit_sleeveless", "Rback"],
+        ["pants_straight_sides", "Rback"],
+        ["wb_pants_straight", "Rback"]
+    ]
+}

@@ -1,0 +1,80 @@
+experiment:
+  project_name: Garments-Generation
+  run_name: SewingGPT-Train
+  run_id: 
+# ----- Dataset-related properties -----
+dataset:
+  class: Garment3DPatternFullDataset
+
+  data_folders:
+    - tee_2300
+    - dress_sleeveless_2550
+    - jacket_2200
+    - jacket_hood_2700
+    - jumpsuit_sleeveless_2000
+    - pants_straight_sides_1000
+    - skirt_2_panels_1200
+    - skirt_4_panels_1600
+    - wb_dress_sleeveless_2600
+    - wb_pants_straight_1500
+    - tee_sleeveless_1800
+
+  # Loadable parameters -- overrwitten if old_experiment is specified
+  mesh_samples: 2000
+  obj_filetag: sim  # scan
+  max_pattern_len: 12   # Overridden if panel_classification is specified
+  max_panel_len: 14
+  max_num_stitches: 24  
+  element_size: 4
+  rotation_size: 4
+  translation_size: 3
+  explicit_stitch_tags: False
+  point_noise_w: 0
+
+  max_datapoints_per_type: 5000  # 5000 > more then any type has, so it basically means using all the data.
+                                 # This value can be reduced to reduce the training dataset size and hence 
+                                 # the training time.
+  filter_by_params: ./nn/data_configs/param_filter.json
+  
+  standardize:     # Remove this key to re-calculate data stats at training time
+    f_scale: [16.351303100585938, 30.945703506469727, 9.60141944885254]
+    f_shift: [0.037076108157634735, -28.06070327758789, 1.0775548219680786]
+    gt_scale:
+      outlines: [25.267892837524418, 31.298505783081055, 0.2677369713783264, 0.2352069765329361]
+      rotations: [1.7071068286895752, 1.9238795042037964, 1.7071068286895752, 1]
+      stitch_tags: [119.98278045654295, 156.0384521484375, 105.92605590820312]
+      translations: [109.58930206298828, 98.27909088134766, 37.84679412841797]
+    gt_shift:
+      outlines: [0, 0, 0.14890235662460327, 0.05642016604542732]
+      rotations: [-0.7071067690849304, -0.9238795042037964, -1, 0]
+      stitch_tags: [-59.99139022827149, -78.12358856201172, -52.95616912841797]
+      translations: [-55.255470275878906, -20.001333236694336, -17.086795806884766]
+
+data_split:
+  valid_per_type: 100
+  test_per_type: 100
+  random_seed: 10
+  type: count
+  # NOTE addining 'filename' property to the split will force the data 
+  # to be loaded from that list instead of being randomly generated
+  filename: ./nn/data_configs/data_split_caption_filtered.json
+
+
+# ----- Network Architecture --------
+NN:
+  pre-trained: ./models/checkpoint.pth
+  model: SewingGPT
+
+# ------- Trainer -----
+trainer: 
+  batch_size: 4
+  devices: [cuda:0]
+  epochs: 350
+  random_seed: 916143406
+  learning_rate: 0.0001
+  optimizer: Adam
+  weight_decay: 0
+  early_stopping:
+    window: 0.0001
+    patience: 50
+  with_visualization: False  # Log visualizations of predicted sewing patterns

@@ -1,0 +1,29 @@
+name: DressCode
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=2.0.0
+  - pytorch-cuda=11.7
+  - pip:
+      - gradio==4.8.0
+      - diffusers==0.24.0
+      - transformers==4.35.2
+      - accelerate
+      - openai
+      - langchain
+      - langchain-community
+      - matplotlib
+      - numpy
+      - opencv-python
+      - requests
+      - scipy
+      - svglib
+      - svgwrite
+      - tensorboard
+      - tqdm
+      - wandb
+      - cairosvg
+      - potpourri3d
