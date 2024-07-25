@@ -62,11 +62,11 @@ Update ```system.json``` with local paths in your system.
 
 - Download the dataset from [[Korosteleva and Lee 2021]](https://github.com/maria-korosteleva/Garment-Pattern-Generator/tree/master) and our [provided captions](https://huggingface.co/IHe-KaiI/DressCode/tree/main). Update Wandb username (```"wandb_username"```) in ```system.json``` if needed.
 - Train the model with ```python nn/train.py -c ./models/train.yaml```.
-- We use Tensorboard to track the training process with ``` tensorboard --logdir=PATH_TO_RECORD_FOLDER```, and our script will save the training records in ```./tensorboard``` by default.
+- We use Tensorboard to track the training process with ```tensorboard --logdir=PATH_TO_RECORD_FOLDER```, and our script will save the training records in ```./tensorboard``` by default.
 
 ##### Resume your training
 
-Our script will attempt to resume the checkpoint from the latest one in the ``` run_id``` folder automatically when the `run_id` is specified in the input config.
+Our script will attempt to resume the checkpoint from the latest one in the ```run_id``` folder automatically when the `run_id` is specified in the input config.
 
 
 
@@ -74,26 +74,26 @@ Our script will attempt to resume the checkpoint from the latest one in the ``` 
 
 - Download our pretrained models.
 
-  - Download our [pretrained SewingGPT](https://huggingface.co/IHe-KaiI/DressCode/tree/main/models) to ``` ./models```.
+  - Download our [pretrained SewingGPT](https://huggingface.co/IHe-KaiI/DressCode/tree/main/models) to ```./models```.
 
-  - Download our [pretrained PBR texture generator model](https://huggingface.co/IHe-KaiI/DressCode/tree/main/material_gen) to ``` ./nn/material_gen``` (optional if only testing the SewingGPT).
+  - Download our [pretrained PBR texture generator model](https://huggingface.co/IHe-KaiI/DressCode/tree/main/material_gen) to ```./nn/material_gen``` (optional if only testing the SewingGPT).
 
 - Test the SewingGPT with ```python nn/evaluation_scripts/predict_class.py -c ./models/infer.yaml```.
 
 - Test with our UI based on Gradio.
 
   1. Inference sewing patterns and PBR textures with the pretrained model:
-     - Test the model with ``` python nn/UI_chat.py```. Input *Shape Prompt* or *Shape Prompt/Texture Prompts* for inference. For example, input prompt ``` dress, sleeveless, midi length``` will produce sewing pattern results only; input prompt ``` dress, sleeveless, midi length/green velvet``` will produce both sewing patterns and PBR textures. It also supports input multiple garment prompts, with ```; ``` (no space) to split, e.g. ``` trouser, long length/green velvet;tank top, cropped length/khaki style  ```.
+     - Test the model with ``` python nn/UI_chat.py```. Input *Shape Prompt* or *Shape Prompt/Texture Prompts* for inference. For example, input prompt ```dress, sleeveless, midi length``` will produce sewing pattern results only; input prompt ```dress, sleeveless, midi length/green velvet``` will produce both sewing patterns and PBR textures. It also supports input multiple garment prompts, with ```;``` (no space) to split, e.g. ``` trouser, long length/green velvet;tank top, cropped length/khaki style  ```.
 
   2. Simulate and render the predicted results (Simulation is for *Windows* only):
-     - Update the local paths in ```system.json```. You may need to use the full paths to the inference output folder (``` "output"```) and HDR map (``` "HDR_path"```) for Blender rendering.
-     - Test the model with simulation using our UI by ``` python nn/UI_chat.py --sim```. The same rule applies to prompts as in Step 1.
+     - Update the local paths in ```system.json```. You may need to use the full paths to the inference output folder (```"output"```) and HDR map (```"HDR_path"```) for Blender rendering.
+     - Test the model with simulation using our UI by ```python nn/UI_chat.py --sim```. The same rule applies to prompts as in Step 1.
 
   3. Use ChatGPT as an LLM interpreter for interactively customized garment generation:
 
      - Update the ```"OpenAI_API_Key"``` and ```"https_proxy"``` (if needed) in ```system.json```.
 
-     - Test the model using our UI with ``` python nn/UI_chat.py --sim --GPT```. This time, users can chat with agents and provide their preferences, e.g. ``` I want to attend a party.```
+     - Test the model using our UI with ```python nn/UI_chat.py --sim --GPT```. This time, users can chat with agents and provide their preferences, e.g. ```I want to attend a party.```
 
 - Our results also support users in loading generated meshes and textures to 3D clothing design software (e.g. Marvelous Designer) for subsequent simulation and animation.
 
@@ -101,7 +101,7 @@ Our script will attempt to resume the checkpoint from the latest one in the ``` 
 
 #### Visualize 3D sewing patterns
 
-- Our script can visualize multiple 3D sewing patterns (before stitching) and output a combined 3D mesh with ``` python nn/multiple_patterns_vis.py --folder PATH_TO_FOLDER```. The output will be in the same folder as the input folder.
+- Our script can visualize multiple 3D sewing patterns (before stitching) and output a combined 3D mesh with ```python nn/multiple_patterns_vis.py --folder PATH_TO_FOLDER```. The output will be in the same folder as the input folder.
 
 
 
