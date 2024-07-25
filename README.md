@@ -34,17 +34,17 @@ conda activate DressCode
 
 Update ```system.json``` with local paths in your system.
 
-- Path to inference output folder (``` "output"```)
+- Path to inference output folder (```"output"```)
 - Paths for the training dataset
-  - Path to sewing pattern dataset (``` "datasets_path"```)
-  - Path to our captions (``` "caption_path"```)
+  - Path to sewing pattern dataset (```"datasets_path"```)
+  - Path to our captions (```"caption_path"```)
 - Paths for simulation of results (leave it empty if no simulation)
-  - Path to human model obj (``` "human_obj_path"```)
-  - Path to simulation temp info file (``` "sim_json_path"```)
-  - Path to HDR environment map (``` "HDR_path"```)
-  - Path to local *blender.exe* for rendering (``` "blender_path"```)
-  - Path to local *mayapy.exe* for simulation (``` "maya_path"```)
-  - Path to simulation properties (``` "dataset_properties_path"```)
+  - Path to human model obj (```"human_obj_path"```)
+  - Path to simulation temp info file (```"sim_json_path"```)
+  - Path to HDR environment map (```"HDR_path"```)
+  - Path to local *blender.exe* for rendering (```"blender_path"```)
+  - Path to local *mayapy.exe* for simulation (```"maya_path"```)
+  - Path to simulation properties (```"dataset_properties_path"```)
 
 #### Download Stable Diffusion 2-1
 
@@ -83,7 +83,7 @@ Our script will attempt to resume the checkpoint from the latest one in the ```r
 - Test with our UI based on Gradio.
 
   1. Inference sewing patterns and PBR textures with the pretrained model:
-     - Test the model with ``` python nn/UI_chat.py```. Input *Shape Prompt* or *Shape Prompt/Texture Prompts* for inference. For example, input prompt ```dress, sleeveless, midi length``` will produce sewing pattern results only; input prompt ```dress, sleeveless, midi length/green velvet``` will produce both sewing patterns and PBR textures. It also supports input multiple garment prompts, with ```;``` (no space) to split, e.g. ``` trouser, long length/green velvet;tank top, cropped length/khaki style  ```.
+     - Test the model with ```python nn/UI_chat.py```. Input *Shape Prompt* or *Shape Prompt/Texture Prompts* for inference. For example, input prompt ```dress, sleeveless, midi length``` will produce sewing pattern results only; input prompt ```dress, sleeveless, midi length/green velvet``` will produce both sewing patterns and PBR textures. It also supports input multiple garment prompts, with ```;``` (no space) to split, e.g. ``` trouser, long length/green velvet;tank top, cropped length/khaki style  ```.
 
   2. Simulate and render the predicted results (Simulation is for *Windows* only):
      - Update the local paths in ```system.json```. You may need to use the full paths to the inference output folder (```"output"```) and HDR map (```"HDR_path"```) for Blender rendering.
