@@ -9,7 +9,7 @@
     >We use Maya 2022 and Qualoth 4.7 in development.
 ### Python Environment in Maya
 
-To install libs in Maya using pip, ``` YOUR_PATH_TO_MAYAPY -m pip install PACKEGE_NAME```, e.g., ``` "C:\Program Files\Autodesk\Maya2022\bin\mayapy.exe" -m pip install numpy```.
+To install libs in Maya using pip, ```YOUR_PATH_TO_MAYAPY -m pip install PACKEGE_NAME```, e.g., ```"C:\Program Files\Autodesk\Maya2022\bin\mayapy.exe" -m pip install numpy```.
 
 * numpy
 * scipy

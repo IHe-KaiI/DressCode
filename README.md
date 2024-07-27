@@ -48,7 +48,7 @@ Update ```system.json``` with local paths in your system.
 
 #### Download Stable Diffusion 2-1
 
-- Download [Stable Diffusion 2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) to ``` ./models--stabilityai--stable-diffusion-2-1-base``` for the CLIP embedding module.
+- Download [Stable Diffusion 2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) to ```./models--stabilityai--stable-diffusion-2-1-base``` for the CLIP embedding module.
 
 #### Packages for Simulation
 
