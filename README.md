@@ -105,6 +105,12 @@ Our script will attempt to resume the checkpoint from the latest one in the ```r
 
 
 
+#### Prompt for data captioning
+
+- We share our prompt used in GPT-4V for data captioning. Please follow this [instruction](./docs/GPT4V-prompt.md) for details.
+
+
+
 ## Acknowledgment
 
 This project is built upon [NeuralTailor](https://github.com/maria-korosteleva/Garment-Pattern-Estimation). Some codes for basic operations on sewing patterns are adopted from [Sewformer](https://github.com/sail-sg/sewformer). Our dataset is based on [[Korosteleva and Lee 2021]](https://github.com/maria-korosteleva/Garment-Pattern-Generator/tree/master). We thank all the authors for their impressive repos.
