@@ -70,6 +70,12 @@ Our script will attempt to resume the checkpoint from the latest one in the ```r
 
 
 
+#### Prompt for data captioning
+
+- We share our prompt used in GPT-4V for data captioning. Please follow this [instruction](./docs/GPT4V-prompt.md) for details.
+
+
+
 ## Testing
 
 - Download our pretrained models.
@@ -102,12 +108,6 @@ Our script will attempt to resume the checkpoint from the latest one in the ```r
 #### Visualize 3D sewing patterns
 
 - Our script can visualize multiple 3D sewing patterns (before stitching) and output a combined 3D mesh with ```python nn/multiple_patterns_vis.py --folder PATH_TO_FOLDER```. The output will be in the same folder as the input folder.
-
-
-
-#### Prompt for data captioning
-
-- We share our prompt used in GPT-4V for data captioning. Please follow this [instruction](./docs/GPT4V-prompt.md) for details.
 
 
 
