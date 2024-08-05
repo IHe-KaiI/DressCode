@@ -240,7 +240,6 @@ map_Kd {texture_path}
 				script_path = 'nn/blender/texture_multi.py'
 
 				command = f'"{blender_executable}" -b -P {script_path} -- "{self.recent_render_info_path}"'
-				print(command)
 				process = subprocess.Popen(command)
 				process.wait()
 

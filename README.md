@@ -8,7 +8,7 @@ This repo is the official implementation for _DressCode: Autoregressively Sewing
 
 **[[Project Page]](https://ihe-kaii.github.io/DressCode/) [[Paper Link]](https://arxiv.org/abs/2401.16465.pdf)**
 
-![dataset_description](./imgs/teaser.png)
+![teaser](./imgs/teaser.png)
 
 ## Abstract
 
@@ -108,6 +108,10 @@ Our script will attempt to resume the checkpoint from the latest one in the ```r
 #### Visualize 3D sewing patterns
 
 - Our script can visualize multiple 3D sewing patterns (before stitching) and output a combined 3D mesh with ```python nn/multiple_patterns_vis.py --folder PATH_TO_FOLDER```. The output will be in the same folder as the input folder.
+
+#### Texture Editing
+
+- Our UI supports texture editing. After running ```nn/UI_chat.py``` and generating the garment, copy the UV map of the last generated garment to the second tab of Gradio and edit the texture on the UV map. Our script will render the results with the new texture. Currently, our editing UI only supports processing one garment at a time.
 
 
 
