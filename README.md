@@ -123,8 +123,6 @@ This project is built upon [NeuralTailor](https://github.com/maria-korosteleva/G
 
 ## Citation
 
-If you use this dataset for your research, please cite our paper:
-
 ```
 @article{he2024dresscode,
   title={DressCode: Autoregressively Sewing and Generating Garments from Text Guidance},
