@@ -19,7 +19,7 @@ Apparel’s significant role in human appearance underscores the importance of g
 ## Installation
 
 ```shell
-git clone git@github.com:IHe-KaiI/DressCode.git
+git clone https://github.com/IHe-KaiI/DressCode.git
 cd DressCode
 
 conda env create -f environment.yaml
